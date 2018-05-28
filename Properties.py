@@ -18,9 +18,23 @@ while(finished==False):
       '10. Exit.')
 
     selection = int(input("Please select an option by typing the number beside it and pressing enter: "))
-    #print("You chose option " + str(selection))
 
-    if selection==3:
+    if selection==1:
+        left=img.imread('./Plots/Signalg.png','r')
+        right=img.imread('./Plots/Signalh.png','r')
+        plt.figure(1)
+        plt.figimage(left)
+        plt.figure(2)
+        plt.figimage(right)
+        print("Now showing the input signals. Close both figures to continue.")
+        plt.show()
+    elif selection==2:
+        table=img.imread('./Plots/DFTTable.png','r')
+        plt.figure(1)
+        plt.figimage(table)
+        print("Now showing the DFT properties table. Close the figure to continue.")
+        plt.show()
+    elif selection==3:
         left=img.imread('./Plots/LinearityLeft.png','r')
         right=img.imread('./Plots/LinearityRight.png','r')
         plt.figure(1)
@@ -90,7 +104,7 @@ while(finished==False):
     else:
         print('Please select a valid option.')
 
-    done = int(input("Type 1 if you wish to continue or 0 to exit."))
+    done = int(input("Type 1 if you wish to continue or 0 to exit:"))
     if done==0:
         print('Thank you for using DFT Properties!')
         finished=True
