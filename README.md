@@ -22,7 +22,7 @@ Edition.
 3. Download the latest version of the project from this 
 repository.
 4. Create a new project with all of the project's files 
-and execute ``the file named _Properties.py_.
+and execute the file named _Properties.py_.
 5. Follow the instructions given by the menu.
 
  
